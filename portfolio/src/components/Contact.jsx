@@ -31,11 +31,11 @@ const Contact = () => {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Info */}
           <div className="animate-slide-in-left">
-            <h3 className="text-2xl font-semibold text-white mb-6">Get In Touch</h3>
+            <h3 className="text-2xl font-semibold text-white mb-6">Let's Work Together</h3>
             <p className="text-gray-300 mb-8 leading-relaxed">
-              I'm currently available for new opportunities and exciting projects.
-              Whether you're looking to discuss a potential collaboration or explore how my skills can contribute to your organization,
-              I'd be delighted to connect and explore possibilities.
+              I'm passionate about creating innovative solutions and would love to collaborate on exciting projects.
+              Whether you're looking for a skilled developer, want to discuss a potential opportunity, or simply want to connect,
+              I'm always open to meaningful conversations and new challenges.
             </p>
 
             <div className="space-y-6">
