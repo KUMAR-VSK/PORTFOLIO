@@ -5,7 +5,24 @@ const Education = () => {
       institution: 'Bannari Amman Institute of Technology',
       period: '2022 – 2026',
       grade: 'CGPA: 8.15 (up to 6th semester)',
-      icon: '🎓'
+      icon: '🎓',
+      description: 'Currently pursuing Bachelor of Technology with focus on Full Stack Development'
+    },
+    {
+      degree: '12th Grade – HSC',
+      institution: 'R G Matric Higher Secondary School',
+      period: '2021 – 2022',
+      grade: '89.3%',
+      icon: '📚',
+      description: 'Higher Secondary Certificate with strong performance in core subjects'
+    },
+    {
+      degree: '10th Grade – SSLC',
+      institution: 'R G Matric Higher Secondary School',
+      period: '2019 – 2020',
+      grade: '97.4%',
+      icon: '🏆',
+      description: 'Secondary School Leaving Certificate with outstanding results'
     }
   ]
 
@@ -31,11 +48,14 @@ const Education = () => {
 
                 {/* Content */}
                 <div className="ml-8 bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-cyan-400 transition-all duration-300 flex-1">
-                  <div className="flex flex-col md:flex-row md:justify-between md:items-start">
+                  <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
                     <div className="flex-1">
                       <h3 className="text-xl font-semibold text-white mb-2">{edu.degree}</h3>
                       <p className="text-cyan-400 font-medium mb-2">{edu.institution}</p>
                       <p className="text-gray-400 text-sm mb-3">{edu.period}</p>
+                      {edu.description && (
+                        <p className="text-gray-300 text-sm mt-3 leading-relaxed">{edu.description}</p>
+                      )}
                     </div>
                     <div className="mt-2 md:mt-0 md:ml-4">
                       <span className="inline-block bg-gradient-to-r from-green-600 to-emerald-600 text-white px-4 py-2 rounded-full text-sm font-medium">
