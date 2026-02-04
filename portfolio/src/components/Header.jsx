@@ -46,9 +46,8 @@ const Header = () => {
 
   return (
     <>
-      <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'glass shadow-lg' : 'bg-transparent'
-      }`}>
+      <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'glass shadow-lg' : 'bg-transparent'
+        }`}>
         <div className="container mx-auto px-4">
           <nav className="flex justify-between items-center py-4">
             <div className="text-2xl font-bold gradient-text cursor-pointer">
@@ -61,14 +60,12 @@ const Header = () => {
                 <li key={item.id}>
                   <button
                     onClick={() => scrollToSection(item.id)}
-                    className={`text-sm font-medium transition-all duration-300 hover:text-cyan-400 relative group ${
-                      activeSection === item.id ? 'text-cyan-400' : 'text-gray-300'
-                    }`}
+                    className={`text-sm font-medium transition-all duration-300 hover:text-white relative group ${activeSection === item.id ? 'text-white' : 'text-gray-400'
+                      }`}
                   >
                     {item.label}
-                    <span className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-400 transition-all duration-300 group-hover:w-full ${
-                      activeSection === item.id ? 'w-full' : ''
-                    }`}></span>
+                    <span className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full ${activeSection === item.id ? 'w-full' : ''
+                      }`}></span>
                   </button>
                 </li>
               ))}
@@ -78,7 +75,7 @@ const Header = () => {
             <div className="md:hidden">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-gray-300 hover:text-cyan-400 transition-colors p-2"
+                className="text-gray-300 hover:text-white transition-colors p-2"
               >
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   {isMenuOpen ? (
@@ -93,18 +90,16 @@ const Header = () => {
         </div>
 
         {/* Mobile Navigation Menu */}
-        <div className={`md:hidden transition-all duration-300 overflow-hidden ${
-          isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-        }`}>
+        <div className={`md:hidden transition-all duration-300 overflow-hidden ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+          }`}>
           <div className="glass mx-4 mb-4 rounded-2xl">
             <ul className="py-4 space-y-2">
               {navItems.map((item) => (
                 <li key={item.id}>
                   <button
                     onClick={() => scrollToSection(item.id)}
-                    className={`w-full text-left px-6 py-3 text-sm font-medium transition-all duration-300 hover:bg-cyan-500/10 hover:text-cyan-400 ${
-                      activeSection === item.id ? 'text-cyan-400 bg-cyan-500/10' : 'text-gray-300'
-                    }`}
+                    className={`w-full text-left px-6 py-3 text-sm font-medium transition-all duration-300 hover:bg-white/10 hover:text-white ${activeSection === item.id ? 'text-white bg-white/10' : 'text-gray-400'
+                      }`}
                   >
                     {item.label}
                   </button>
@@ -119,9 +114,9 @@ const Header = () => {
       {isScrolled && (
         <button
           onClick={() => scrollToSection('home')}
-          className="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 z-40 animate-bounce-subtle"
+          className="fixed bottom-8 right-8 w-12 h-12 bg-white text-black rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 z-40 animate-bounce-subtle"
         >
-          <svg className="w-6 h-6 text-white mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-6 h-6 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
           </svg>
         </button>

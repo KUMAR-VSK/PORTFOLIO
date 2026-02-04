@@ -22,16 +22,16 @@ const LoadingScreen = () => {
             <div className="text-center">
                 {/* Logo/Name */}
                 <div className="mb-8">
-                    <h1 className="text-6xl font-bold gradient-text mb-4 animate-pulse">
+                    <h1 className="text-6xl font-bold text-white mb-4 animate-pulse">
                         KVS
                     </h1>
-                    <p className="text-cyan-400 text-lg">Full Stack Developer</p>
+                    <p className="text-gray-400 text-lg">Full Stack Developer</p>
                 </div>
 
                 {/* Loading Bar */}
                 <div className="w-64 h-2 bg-gray-800 rounded-full overflow-hidden">
                     <div
-                        className="h-full bg-gradient-to-r from-cyan-500 to-blue-500 transition-all duration-300 ease-out"
+                        className="h-full bg-white transition-all duration-300 ease-out"
                         style={{ width: `${progress}%` }}
                     />
                 </div>
@@ -41,9 +41,9 @@ const LoadingScreen = () => {
 
                 {/* Animated Dots */}
                 <div className="flex justify-center space-x-2 mt-6">
-                    <div className="w-2 h-2 bg-cyan-500 rounded-full animate-bounce" style={{ animationDelay: '0s' }}></div>
-                    <div className="w-2 h-2 bg-blue-500 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
-                    <div className="w-2 h-2 bg-cyan-500 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
+                    <div className="w-2 h-2 bg-white rounded-full animate-bounce" style={{ animationDelay: '0s' }}></div>
+                    <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
+                    <div className="w-2 h-2 bg-white rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
                 </div>
             </div>
         </div>

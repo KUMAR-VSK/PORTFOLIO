@@ -72,7 +72,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-8 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent animate-fade-in-up">
+        <h2 className="text-4xl font-bold text-center mb-8 text-white animate-fade-in-up">
           Featured Projects
         </h2>
 
@@ -83,11 +83,10 @@ const Projects = () => {
               <button
                 key={filter}
                 onClick={() => setActiveFilter(filter)}
-                className={`px-6 py-2 rounded-xl font-medium transition-all duration-300 ${
-                  activeFilter === filter
-                    ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white shadow-lg'
-                    : 'text-gray-300 hover:text-cyan-400 hover:bg-gray-700'
-                }`}
+                className={`px-6 py-2 rounded-xl font-medium transition-all duration-300 ${activeFilter === filter
+                    ? 'bg-white text-black shadow-lg'
+                    : 'text-gray-300 hover:text-white hover:bg-gray-700'
+                  }`}
               >
                 {filter}
               </button>
@@ -99,16 +98,16 @@ const Projects = () => {
           {getFilteredProjects().map((project, index) => (
             <div
               key={index}
-              className="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-cyan-400 transition-all duration-300 transform hover:-translate-y-3 animate-slide-in-right group"
+              className="bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-white transition-all duration-300 transform hover:-translate-y-3 animate-slide-in-right group"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               {/* Header */}
-              <div className="bg-gradient-to-r from-blue-600 to-cyan-600 p-6">
+              <div className="bg-white/5 p-6 border-b border-gray-800">
                 <div className="flex items-center mb-4">
-                  <span className="text-5xl mr-4 group-hover:animate-bounce">{project.icon}</span>
+                  <span className="text-5xl mr-4 group-hover:animate-bounce grayscale">{project.icon}</span>
                   <div>
                     <h3 className="text-xl font-semibold text-white mb-1">{project.title}</h3>
-                    <p className="text-blue-200 text-sm font-medium">{project.techStack}</p>
+                    <p className="text-gray-400 text-sm font-medium">{project.techStack}</p>
                   </div>
                 </div>
               </div>
@@ -122,7 +121,7 @@ const Projects = () => {
                   <ul className="space-y-1">
                     {project.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-start text-sm text-gray-300">
-                        <span className="text-cyan-400 mr-2 mt-1">•</span>
+                        <span className="text-white mr-2 mt-1">•</span>
                         {feature}
                       </li>
                     ))}
@@ -143,7 +142,7 @@ const Projects = () => {
                   </a>
                   <a
                     href={project.live}
-                    className="flex-1 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-all duration-300 transform hover:scale-105 text-center text-sm"
+                    className="flex-1 bg-white hover:bg-gray-200 text-black font-medium py-2 px-4 rounded-lg transition-all duration-300 transform hover:scale-105 text-center text-sm"
                   >
                     Live Demo
                   </a>

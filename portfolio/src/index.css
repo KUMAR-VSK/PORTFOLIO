@@ -10,12 +10,17 @@
     scroll-behavior: smooth;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: 'Poppins', sans-serif;
   }
 
   body {
-    @apply bg-gray-900 text-white;
+    @apply bg-black text-white;
   }
 
   * {
@@ -25,15 +30,15 @@
 
 /* Glassmorphism utilities */
 .glass {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .glass-card {
-  background: rgba(17, 24, 39, 0.8);
+  background: rgba(20, 20, 20, 0.8);
   backdrop-filter: blur(20px);
-  border: 1px solid rgba(75, 85, 99, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Custom animations */
@@ -42,6 +47,7 @@
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -53,6 +59,7 @@
     opacity: 0;
     transform: translateX(-50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -64,6 +71,7 @@
     opacity: 0;
     transform: translateX(50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -71,27 +79,36 @@
 }
 
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-10px);
   }
 }
 
 @keyframes pulse-glow {
-  0%, 100% {
-    box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
+
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
   }
+
   50% {
-    box-shadow: 0 0 30px rgba(6, 182, 212, 0.6);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
   }
 }
 
 @keyframes bounce-subtle {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-5px);
   }
@@ -101,15 +118,19 @@
   0% {
     background-position: -200px 0;
   }
+
   100% {
     background-position: calc(200px + 100%) 0;
   }
 }
 
 @keyframes gradient-shift {
-  0%, 100% {
+
+  0%,
+  100% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
@@ -120,6 +141,7 @@
     opacity: 0;
     transform: scale(0.9);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
@@ -160,9 +182,9 @@
   animation: scale-in 0.5s ease-out;
 }
 
-/* Gradient text */
+/* Gradient text - Monochrome */
 .gradient-text {
-  background: linear-gradient(135deg, #06b6d4, #3b82f6);
+  background: linear-gradient(135deg, #ffffff, #9ca3af);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -174,21 +196,21 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #111827;
+  background: #000000;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #06b6d4, #3b82f6);
+  background: #333333;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #0891b2, #2563eb);
+  background: #555555;
 }
 
 /* Progress bar styles */
 .progress-bar {
-  background: linear-gradient(90deg, #06b6d4, #3b82f6);
+  background: linear-gradient(90deg, #ffffff, #6b7280);
   height: 6px;
   border-radius: 3px;
   transition: width 0.3s ease;
@@ -196,18 +218,19 @@
 
 /* Glow effects */
 .glow-on-hover:hover {
-  box-shadow: 0 0 30px rgba(6, 182, 212, 0.3);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
 }
 
 .shimmer {
-  background: linear-gradient(90deg, #f0f0f0 0px, #e0e0e0 40px, #f0f0f0 80px);
+  background: linear-gradient(90deg, #1f2937 0px, #374151 40px, #1f2937 80px);
+  /* Dark shimemr */
   background-size: 200px;
   animation: shimmer 1.5s infinite linear;
 }
 
 /* Focus styles for accessibility */
 *:focus-visible {
-  outline: 2px solid #06b6d4;
+  outline: 2px solid #ffffff;
   outline-offset: 2px;
 }
 
@@ -230,11 +253,13 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  filter: grayscale(100%);
+  /* Force grayscale on images */
 }
 
 /* Selection styling */
 ::selection {
-  background-color: rgba(6, 182, 212, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   color: #fff;
 }
 
@@ -247,6 +272,7 @@ img {
 
 /* Reduced motion for accessibility */
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
@@ -259,7 +285,7 @@ img {
 
 /* Mobile tap highlight */
 * {
-  -webkit-tap-highlight-color: rgba(6, 182, 212, 0.1);
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Smooth font rendering */

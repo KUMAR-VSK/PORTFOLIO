@@ -119,7 +119,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-4 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent animate-fade-in-up">
+        <h2 className="text-4xl font-bold text-center mb-4 text-white animate-fade-in-up">
           Get In Touch
         </h2>
         <p className="text-center text-gray-400 mb-16 max-w-2xl mx-auto">
@@ -138,14 +138,14 @@ const Contact = () => {
 
             <div className="space-y-6">
               <div className="flex items-center space-x-4 group">
-                <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-xl">📧</span>
+                <div className="w-12 h-12 bg-gray-900 border border-gray-800 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <span className="text-xl grayscale">📧</span>
                 </div>
                 <div>
                   <p className="text-white font-medium">Email</p>
                   <a
                     href="mailto:kumarvsofficial@gmail.com"
-                    className="text-cyan-400 hover:text-cyan-300 transition-colors"
+                    className="text-gray-300 hover:text-white transition-colors"
                     aria-label="Send email to Kumar V S"
                   >
                     kumarvsofficial@gmail.com
@@ -154,14 +154,14 @@ const Contact = () => {
               </div>
 
               <div className="flex items-center space-x-4 group">
-                <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-teal-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-xl">📱</span>
+                <div className="w-12 h-12 bg-gray-900 border border-gray-800 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <span className="text-xl grayscale">📱</span>
                 </div>
                 <div>
                   <p className="text-white font-medium">Phone</p>
                   <a
                     href="tel:+919488158891"
-                    className="text-gray-300 hover:text-cyan-400 transition-colors"
+                    className="text-gray-300 hover:text-white transition-colors"
                     aria-label="Call Kumar V S"
                   >
                     +91 9488158891
@@ -170,8 +170,8 @@ const Contact = () => {
               </div>
 
               <div className="flex items-center space-x-4 group">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-xl">📍</span>
+                <div className="w-12 h-12 bg-gray-900 border border-gray-800 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <span className="text-xl grayscale">📍</span>
                 </div>
                 <div>
                   <p className="text-white font-medium">Location</p>
@@ -188,34 +188,34 @@ const Contact = () => {
                   href="https://github.com/KUMAR-VSK"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 border border-gray-600 hover:border-cyan-400"
+                  className="w-12 h-12 bg-gray-900 hover:bg-white hover:text-black rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 border border-gray-800"
                   aria-label="Visit Kumar V S GitHub profile"
                 >
-                  <span className="text-lg">🐙</span>
+                  <span className="text-lg grayscale">🐙</span>
                 </a>
                 <a
                   href="https://linkedin.com/in/kumar-v-s-1695861b2"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 border border-gray-600 hover:border-cyan-400"
+                  className="w-12 h-12 bg-gray-900 hover:bg-white hover:text-black rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 border border-gray-800"
                   aria-label="Visit Kumar V S LinkedIn profile"
                 >
-                  <span className="text-lg">💼</span>
+                  <span className="text-lg grayscale">💼</span>
                 </a>
                 <a
                   href="mailto:kumarvsofficial@gmail.com"
-                  className="w-12 h-12 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 border border-gray-600 hover:border-cyan-400"
+                  className="w-12 h-12 bg-gray-900 hover:bg-white hover:text-black rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 border border-gray-800"
                   aria-label="Send email to Kumar V S"
                 >
-                  <span className="text-lg">✉️</span>
+                  <span className="text-lg grayscale">✉️</span>
                 </a>
               </div>
             </div>
 
             {/* Additional Info */}
-            <div className="mt-8 p-6 bg-gradient-to-br from-cyan-900/20 to-blue-900/20 rounded-xl border border-cyan-500/30">
+            <div className="mt-8 p-6 bg-gray-900 rounded-xl border border-gray-800">
               <h4 className="text-white font-semibold mb-2 flex items-center">
-                <span className="text-xl mr-2">⚡</span>
+                <span className="text-xl mr-2 grayscale">⚡</span>
                 Quick Response
               </h4>
               <p className="text-gray-300 text-sm">
@@ -226,7 +226,7 @@ const Contact = () => {
 
           {/* Contact Form */}
           <div className="animate-slide-in-right">
-            <div className="bg-gray-800 rounded-xl p-8 border border-gray-700 hover:border-cyan-400/50 transition-all duration-300">
+            <div className="bg-gray-900 rounded-xl p-8 border border-gray-800 hover:border-white/20 transition-all duration-300">
               <h3 className="text-2xl font-semibold text-white mb-6">Send a Message</h3>
               <form onSubmit={handleSubmit} className="space-y-6" noValidate>
                 <div>
@@ -240,9 +240,9 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     disabled={isSubmitting}
-                    className={`w-full px-4 py-3 bg-gray-700 border rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed ${errors.name
-                        ? 'border-red-500 focus:ring-red-500'
-                        : 'border-gray-600 focus:ring-cyan-500 focus:border-transparent'
+                    className={`w-full px-4 py-3 bg-gray-800 border rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed ${errors.name
+                      ? 'border-red-500 focus:ring-red-500'
+                      : 'border-gray-700 focus:ring-white focus:border-transparent'
                       }`}
                     placeholder="Your Name"
                     aria-required="true"
@@ -267,9 +267,9 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     disabled={isSubmitting}
-                    className={`w-full px-4 py-3 bg-gray-700 border rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed ${errors.email
-                        ? 'border-red-500 focus:ring-red-500'
-                        : 'border-gray-600 focus:ring-cyan-500 focus:border-transparent'
+                    className={`w-full px-4 py-3 bg-gray-800 border rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed ${errors.email
+                      ? 'border-red-500 focus:ring-red-500'
+                      : 'border-gray-700 focus:ring-white focus:border-transparent'
                       }`}
                     placeholder="your.email@example.com"
                     aria-required="true"
@@ -294,9 +294,9 @@ const Contact = () => {
                     onChange={handleChange}
                     disabled={isSubmitting}
                     rows={5}
-                    className={`w-full px-4 py-3 bg-gray-700 border rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 transition-colors resize-none disabled:opacity-50 disabled:cursor-not-allowed ${errors.message
-                        ? 'border-red-500 focus:ring-red-500'
-                        : 'border-gray-600 focus:ring-cyan-500 focus:border-transparent'
+                    className={`w-full px-4 py-3 bg-gray-800 border rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 transition-colors resize-none disabled:opacity-50 disabled:cursor-not-allowed ${errors.message
+                      ? 'border-red-500 focus:ring-red-500'
+                      : 'border-gray-700 focus:ring-white focus:border-transparent'
                       }`}
                     placeholder="Tell me about your project or inquiry..."
                     aria-required="true"
@@ -316,7 +316,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 focus:ring-offset-gray-800 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center"
+                  className="w-full bg-white text-black hover:bg-gray-200 font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center"
                   aria-label="Send message"
                 >
                   {isSubmitting ? (
