@@ -32,7 +32,7 @@ const Skills = () => {
       bgText: "TOOLS",
       skills: [
         "Git.sh", "GitHub.sh", "Postman.exe",
-        "VS_Code.app", "Vercel.sh", "Railway.sh", "Render.sh"
+        "VS_Code.app","IntelliJ_idea.sh", "Vercel.sh", "Railway.sh", "Render.sh"
       ]
     }
   ]
