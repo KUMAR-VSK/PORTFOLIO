@@ -23,7 +23,7 @@ const LoadingScreen = () => {
                 {/* Logo/Name */}
                 <div className="mb-8">
                     <h1 className="text-6xl font-bold text-white mb-4 animate-pulse">
-                        KVS
+                        VSK
                     </h1>
                     <p className="text-gray-400 text-lg">Full Stack Developer</p>
                 </div>
