@@ -66,9 +66,9 @@ const Contact = () => {
     // EmailJS configuration
     // NOTE: Replace these with your actual EmailJS credentials
     // Sign up at https://www.emailjs.com/ and get your credentials
-    const serviceID = 'service_xxxxxxx' // Replace with your EmailJS service ID
-    const templateID = 'template_xxxxxxx' // Replace with your EmailJS template ID
-    const userID = 'your_user_id' // Replace with your EmailJS user ID
+    const serviceID = 'service_iccoqxb' // Replace with your EmailJS service ID
+    const templateID = 'template_1cvnqgs' // Replace with your EmailJS template ID
+    const userID = 'W_hhK2C4C3XvlDaYF' // Updated from your screenshot
 
     try {
       // Show loading toast
@@ -101,16 +101,9 @@ const Contact = () => {
     } catch (error) {
       console.error('EmailJS Error:', error)
 
-      // For now, since EmailJS is not configured, show a mock success
-      toast.success('✅ Form submitted! (Demo mode - EmailJS not configured yet)', {
+      toast.error('❌ Failed to send message. Please try again or email me directly.', {
         duration: 5000,
       })
-
-      // In production with real EmailJS credentials, use this instead:
-      // toast.error('❌ Failed to send message. Please try again or email me directly.')
-
-      // Reset form anyway for demo
-      setFormData({ name: '', email: '', message: '' })
     } finally {
       setIsSubmitting(false)
     }
