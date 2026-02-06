@@ -1,96 +1,110 @@
 const Skills = () => {
   const skillCategories = [
     {
-      title: 'Frontend',
-      icon: '💻',
+      id: "PID_8492",
+      title: "FRONTEND_CORE",
+      bgText: "FRONTEND",
       skills: [
-        { name: 'HTML5', level: 'Advanced' },
-        { name: 'CSS3', level: 'Advanced' },
-        { name: 'React.js', level: 'Advanced' },
-        { name: 'Bootstrap / Tailwind CSS', level: 'Advanced' }
+        "HTML5.sh", "CSS3.sh", "React.js.sh",
+        "Tailwind.sh", "Bootstrap.sh"
       ]
     },
     {
-      title: 'Backend',
-      icon: '⚙️',
+      id: "PID_1138",
+      title: "BACKEND_SYSTEMS",
+      bgText: "BACKEND",
       skills: [
-        { name: 'Java', level: 'Advanced' },
-        { name: 'OOPs (Object-Oriented Programming)', level: 'Advanced' },
-        { name: 'Spring Boot', level: 'Advanced' },
-        { name: 'REST APIs', level: 'Advanced' }
+        "Java.java", "Spring_Boot.jar", "REST_API.sh",
+        "OOPs_Concepts.cpp"
       ]
     },
     {
-      title: 'Database',
-      icon: '🗄️',
+      id: "PID_9000",
+      title: "DATABASE_MATRIX",
+      bgText: "DATA",
       skills: [
-        { name: 'MySQL', level: 'Advanced' },
-        { name: 'H2 Database', level: 'Intermediate' },
-        { name: 'SQL Queries (Joins, Subqueries)', level: 'Advanced' }
+        "MySQL.sql", "H2_Database.db", "SQL_Queries.sql"
       ]
     },
     {
-      title: 'Tools',
-      icon: '🛠️',
+      id: "PID_2077",
+      title: "DEVOPS_TOOLS",
+      bgText: "TOOLS",
       skills: [
-        { name: 'Git & GitHub', level: 'Advanced' },
-        { name: 'Postman', level: 'Intermediate' },
-        { name: 'VS Code', level: 'Advanced' },
-        { name: 'Vercel', level: 'Intermediate' },
-        { name: 'Railway', level: 'Intermediate' },
-        { name: 'Render', level: 'Intermediate' }
+        "Git.sh", "GitHub.sh", "Postman.exe",
+        "VS_Code.app", "Vercel.sh", "Railway.sh", "Render.sh"
       ]
     }
   ]
 
-  const getLevelColor = (level) => {
-    switch (level) {
-      case 'Advanced': return 'bg-white text-black border border-gray-200'
-      case 'Intermediate': return 'bg-gray-500 text-white'
-      case 'Beginner': return 'bg-gray-800 text-gray-300 border border-gray-700'
-      default: return 'bg-gray-500'
-    }
-  }
-
   return (
-    <section id="skills" className="py-20 bg-gray-900">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-16 text-white animate-fade-in-up">
-          Technical Expertise
+    <section id="skills" className="py-20 bg-black text-white relative overflow-hidden font-mono">
+      <div className="max-w-7xl mx-auto px-4 relative z-10">
+        <h2 className="text-5xl md:text-7xl font-bold mb-20 tracking-tighter animate-fade-in-up">
+          TECH ARSENAL
         </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div className="grid md:grid-cols-2 gap-8">
           {skillCategories.map((category, index) => (
             <div
               key={index}
-              className="bg-gray-900 rounded-xl p-6 border border-gray-800 hover:border-white transition-all duration-300 transform hover:-translate-y-2 animate-slide-in-left"
+              className="group relative"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="flex items-center mb-6">
-                <span className="text-4xl mr-4 grayscale">{category.icon}</span>
-                <h3 className="text-xl font-semibold text-white">{category.title}</h3>
+              {/* Background large text */}
+              <div className="absolute -right-4 -bottom-4 text-6xl md:text-8xl font-black text-gray-800 opacity-20 select-none z-0 pointer-events-none uppercase">
+                {category.bgText}
               </div>
-              <div className="space-y-3">
-                {category.skills.map((skill, skillIndex) => (
-                  <div key={skillIndex} className="space-y-1">
-                    <div className="flex items-center justify-between">
-                      <span className="text-gray-300 text-sm">{skill.name}</span>
-                      <span className={`text-xs px-2 py-1 rounded-full font-medium ${getLevelColor(skill.level)}`}>
-                        {skill.level}
-                      </span>
-                    </div>
-                    <div className="w-full bg-gray-700 rounded-full h-2">
-                      <div
-                        className={`progress-bar h-2 rounded-full ${skill.level === 'Advanced' ? 'w-full' :
-                            skill.level === 'Intermediate' ? 'w-3/4' : 'w-1/2'
-                          }`}
-                      ></div>
-                    </div>
+
+              {/* Terminal Window */}
+              <div className="relative z-10 bg-gray-900 border border-gray-800 rounded-lg overflow-hidden hover:border-gray-600 transition-colors duration-300 shadow-2xl">
+
+                {/* Window Header */}
+                <div className="bg-gray-800/50 p-3 flex items-center justify-between border-b border-gray-700">
+                  <div className="flex space-x-2">
+                    <div className="w-3 h-3 rounded-full bg-red-500/50"></div>
+                    <div className="w-3 h-3 rounded-full bg-yellow-500/50"></div>
+                    <div className="w-3 h-3 rounded-full bg-green-500/50"></div>
                   </div>
-                ))}
+                  <div className="text-xs text-gray-500 font-mono flex items-center gap-4">
+                    <span>{category.id}</span>
+                    <span className="text-gray-300 font-bold flex items-center gap-2">
+                      {index % 2 === 0 ? '</>' : '⚡'} {category.title}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Window Content */}
+                <div className="p-6">
+                  <div className="flex flex-wrap gap-3">
+                    {category.skills.map((skill, i) => (
+                      <div
+                        key={i}
+                        className="flex items-center group/skill"
+                      >
+                        <div className="bg-black/50 border border-gray-700 px-4 py-2 rounded-sm text-sm text-gray-300 hover:text-white hover:border-white hover:bg-gray-800 transition-all cursor-default flex items-center gap-2">
+                          <span className="text-gray-600 group-hover/skill:text-green-400 font-bold">{'>'}</span>
+                          {skill}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
               </div>
+
+              {/* Corner accents */}
+              <div className="absolute -top-1 -left-1 w-2 h-2 border-t-2 border-l-2 border-white/20"></div>
+              <div className="absolute -bottom-1 -right-1 w-2 h-2 border-b-2 border-r-2 border-white/20"></div>
             </div>
           ))}
         </div>
+      </div>
+
+      {/* Decorative background elements */}
+      <div className="absolute top-0 right-0 p-4 text-xs text-gray-800 font-mono text-right">
+        <div>SYSTEM_STATUS: OPTIMAL</div>
+        <div>LOAD_BALANCER: ACTIVE</div>
       </div>
     </section>
   )
