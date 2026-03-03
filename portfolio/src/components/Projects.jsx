@@ -66,6 +66,24 @@ const Projects = () => {
       github: '#',
       live: 'https://banking-deployment.vercel.app/',
       tag: 'ML | Finance | Prediction'
+    },
+    {
+      title: 'Microservices E-Commerce Backend System',
+      description: 'Designed and developed a scalable microservices-based e-commerce backend following industry-standard architecture. Built independent microservices enabling modular development and easy scalability.',
+      features: [
+        'Built independent microservices (User, Product, Order) and API Gateway',
+        'Service-to-service communication via REST APIs and centralized routing',
+        'Integrated Eureka Service Registry for dynamic service discovery',
+        'Optimized MySQL databases for service-specific data isolation',
+        'Secure endpoints with JWT-based authentication and Spring Security',
+        'Containerized microservices using Docker for consistent deployment'
+      ],
+      techStack: 'Java, Spring Boot, Spring Cloud, MySQL, REST, Docker',
+      deployment: 'Docker',
+      icon: '🛒',
+      github: '#',
+      live: '#',
+      tag: 'Backend | Microservices'
     }
   ]
 
@@ -84,8 +102,8 @@ const Projects = () => {
                 key={filter}
                 onClick={() => setActiveFilter(filter)}
                 className={`px-6 py-2 rounded-xl font-medium transition-all duration-300 ${activeFilter === filter
-                    ? 'bg-white text-black shadow-lg'
-                    : 'text-gray-300 hover:text-white hover:bg-gray-700'
+                  ? 'bg-white text-black shadow-lg'
+                  : 'text-gray-300 hover:text-white hover:bg-gray-700'
                   }`}
               >
                 {filter}
