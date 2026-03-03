@@ -2,9 +2,9 @@ const Certifications = () => {
   const certifications = [
 
     {
-      title: 'Java Programming Certificate',
-      description: 'Complete Java Programming Course',
-      issuer: 'Online Platform',
+      title: 'SQL (Advanced) Certificate',
+      description: 'Demonstrated proficiency in complex queries, window functions, joins, aggregations, subqueries, and query optimization techniques',
+      issuer: 'HACKER RANK',
       icon: '☕'
     }
   ]
