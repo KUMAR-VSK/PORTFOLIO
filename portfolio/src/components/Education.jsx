@@ -4,9 +4,9 @@ const Education = () => {
       degree: 'B.Tech in Information Technology',
       institution: 'Bannari Amman Institute of Technology',
       period: '2022 – 2026',
-      grade: 'CGPA: 8.15 (up to 6th semester)',
+      grade: 'CGPA: 8.14 (up to 7th semester)',
       icon: '🎓',
-      description: 'Currently pursuing Bachelor of Technology with focus on Full Stack Development'
+      description: 'Currently pursuing Bachelor of Technology with focus on Software Development'
     },
     {
       degree: '12th Grade – HSC',

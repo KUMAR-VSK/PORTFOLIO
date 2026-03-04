@@ -6,7 +6,7 @@ const Footer = () => {
           <div className="md:col-span-1">
             <h3 className="text-2xl font-bold mb-4 text-white">Kumar V S</h3>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Full Stack Developer specializing in scalable web applications with modern UI/UX design,
+              Software Developer specializing in scalable web applications with modern UI/UX design,
               secure backend APIs, and production-ready deployment solutions.
             </p>
             <div className="flex space-x-4">

@@ -3,7 +3,7 @@ import React from 'react'
 const Projects = () => {
   const [activeFilter, setActiveFilter] = React.useState('All')
 
-  const filterOptions = ['All', 'Full Stack', 'AI/ML', 'ML']
+  const filterOptions = ['All', 'Software', 'AI/ML', 'ML']
 
   const getFilteredProjects = () => {
     if (activeFilter === 'All') return projects
@@ -15,7 +15,7 @@ const Projects = () => {
   const projects = [
     {
       title: 'Personal Finance Manager (Tax & Investment Guide)',
-      description: 'A full-stack financial application built with Spring Boot backend for secure tax calculations and MySQL database management, paired with React frontend for an intuitive user experience. Implements complex business logic for Indian tax systems and real-time financial data integration.',
+      description: 'A robust software application built with Spring Boot backend for secure tax calculations and MySQL database management, paired with React frontend for an intuitive user experience. Implements complex business logic for Indian tax systems and real-time financial data integration.',
       features: [
         'Automated tax calculation based on Indian income tax slabs',
         'Investment portfolio optimization recommendations',
@@ -29,7 +29,7 @@ const Projects = () => {
       icon: '💰',
       github: '#',
       live: '#',
-      tag: 'Full Stack | Finance'
+      tag: 'Software | Finance'
     },
     {
       title: 'Smart Stay (AI Hotel Recommendation System)',

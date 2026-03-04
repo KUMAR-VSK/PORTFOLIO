@@ -1,7 +1,7 @@
 const Achievements = () => {
   const achievements = [
     {
-      title: 'Built and deployed full-stack applications successfully',
+      title: 'Built and deployed software applications successfully',
       icon: '🏆',
       description: 'Experience with complete software development lifecycle'
     },

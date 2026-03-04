@@ -51,7 +51,7 @@ const Header = () => {
         <div className="container mx-auto px-4">
           <nav className="flex justify-between items-center py-4">
             <div className="text-2xl font-bold gradient-text cursor-pointer">
-              Kumar V S
+              KUMAR V S
             </div>
 
             {/* Desktop Navigation */}

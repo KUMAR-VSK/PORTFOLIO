@@ -8,7 +8,7 @@ const About = () => {
         <div className="bg-gray-900 rounded-xl p-8 border border-gray-700 hover:border-white transition-all duration-300 animate-slide-in-left">
           <p className="text-lg text-gray-300 mb-8 leading-relaxed">
             I am a Java Software Developer specializing in Spring Boot for robust backend development and React for modern, responsive frontend interfaces.
-            My expertise focuses on building scalable full-stack applications with clean architecture, secure API implementations, and efficient database management using Java, Spring Boot, and MySQL technologies.
+            My expertise focuses on building scalable software applications with clean architecture, secure API implementations, and efficient database management using Java, Spring Boot, and MySQL technologies.
           </p>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -17,7 +17,7 @@ const About = () => {
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <span className="text-white text-lg">⚡</span>
-                  <span className="text-gray-300">Full Stack Application Development</span>
+                  <span className="text-gray-300">Software Application Development</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <span className="text-white text-lg">🔒</span>

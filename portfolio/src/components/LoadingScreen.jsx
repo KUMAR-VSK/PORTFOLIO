@@ -25,7 +25,7 @@ const LoadingScreen = () => {
                     <h1 className="text-6xl font-bold text-white mb-4 animate-pulse">
                         VSK
                     </h1>
-                    <p className="text-gray-400 text-lg">Full Stack Developer</p>
+                    <p className="text-gray-400 text-lg">Software Developer</p>
                 </div>
 
                 {/* Loading Bar */}

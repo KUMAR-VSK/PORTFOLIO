@@ -1,15 +1,6 @@
 const Skills = () => {
   const skillCategories = [
     {
-      id: "PID_8492",
-      title: "FRONTEND_CORE",
-      bgText: "FRONTEND",
-      skills: [
-        "HTML5.sh", "CSS3.sh", "React.js.sh",
-        "Tailwind.sh", "Bootstrap.sh"
-      ]
-    },
-    {
       id: "PID_1138",
       title: "BACKEND_SYSTEMS",
       bgText: "BACKEND",
@@ -34,7 +25,15 @@ const Skills = () => {
         "Git.sh", "GitHub.sh", "Postman.exe",
         "VS_Code.app","IntelliJ_idea.sh", "Vercel.sh", "Railway.sh", "Render.sh"
       ]
-    }
+    },
+    {
+      id: "PID_8492",
+      title: "DEPLOYMENT_CORE",
+      bgText: "DEPLOYMENT",
+      skills: [
+        "Railway.sh", "Render.sh","Vercel.sh","Netlify.sh","GitHub.sh","Aiven.sh"
+      ]
+    },
   ]
 
   return (
@@ -103,8 +102,7 @@ const Skills = () => {
 
       {/* Decorative background elements */}
       <div className="absolute top-0 right-0 p-4 text-xs text-gray-800 font-mono text-right">
-        <div>SYSTEM_STATUS: OPTIMAL</div>
-        <div>LOAD_BALANCER: ACTIVE</div>
+        <div>STUDY_STATUS: ACTIVE</div>
       </div>
     </section>
   )
