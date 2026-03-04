@@ -3,7 +3,7 @@ import React from 'react'
 const Projects = () => {
   const [activeFilter, setActiveFilter] = React.useState('All')
 
-  const filterOptions = ['All', 'Software', 'AI/ML', 'ML']
+  const filterOptions = ['All', 'Software']
 
   const getFilteredProjects = () => {
     if (activeFilter === 'All') return projects
