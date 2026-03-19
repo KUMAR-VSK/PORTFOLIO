@@ -61,9 +61,9 @@ const Contact = () => {
 
     setIsSubmitting(true)
 
-    const serviceID = 'service_iccoqxb'
-    const templateID = 'template_1cvnqgs'
-    const userID = 'W_hhK2C4C3XvlDaYF'
+    const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID || 'YOUR_SERVICE_ID'
+    const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'YOUR_TEMPLATE_ID'
+    const userID = import.meta.env.VITE_EMAILJS_USER_ID || 'YOUR_USER_ID'
 
     try {
       const loadingToast = toast.loading('Sending your message...')
