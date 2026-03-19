@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://kumar-vs-portfolio.vercel.app/sitemap.xml
