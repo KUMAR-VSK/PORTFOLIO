@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
+import GitHubStats from './components/GitHubStats'
 import Education from './components/Education'
 import Certifications from './components/Certifications'
 import Achievements from './components/Achievements'
@@ -11,17 +12,18 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import ToastContainer from './components/ToastContainer'
 import LoadingScreen from './components/LoadingScreen'
+import ThreeDBackground from './components/ThreeDBackground'
+import SkillsCanvas from './components/SkillsCanvas'
+import FooterParticles from './components/FooterParticles'
+import { VisualsProvider } from './contexts/VisualsContext'
+import Resume from './components/Resume'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    // Simulate initial loading time
-    const timer = setTimeout(() => {
-      setIsLoading(false)
-    }, 2000) // 2 seconds loading time
-
-    return () => clearTimeout(timer)
+    // Remove artificial loading - load immediately
+    setIsLoading(false)
   }, [])
 
   if (isLoading) {
@@ -29,7 +31,11 @@ function App() {
   }
 
   return (
-    <>
+    <VisualsProvider>
+      <ThreeDBackground />
+      <SkillsCanvas />
+      <FooterParticles />
+      <Resume />
       <ToastContainer />
       <div className="min-h-screen scroll-smooth">
         <Header />
@@ -38,6 +44,7 @@ function App() {
           <About />
           <Skills />
           <Projects />
+          <GitHubStats />
           <Education />
           <Certifications />
           <Achievements />
@@ -45,7 +52,7 @@ function App() {
         </main>
         <Footer />
       </div>
-    </>
+    </VisualsProvider>
   )
 }
 

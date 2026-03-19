@@ -1,0 +1,28 @@
+{
+  "name": "Kumar V S",
+  "title": "Full Stack Java Developer",
+  "location": "Udumelpet, Tamil Nadu, India",
+  "contact": {
+    "email": "kumarvsofficial@gmail.com",
+    "phone": "+91 9488158891"
+  },
+  "sections": [
+    {
+      "heading": "Summary",
+      "items": [
+        "Java/Spring Boot backend with React frontend",
+        "Experience designing RESTful APIs and scalable microservices"
+      ]
+    },
+    {
+      "heading": "Experience",
+      "items": [
+        { "title": "Senior Full Stack Developer", "points": ["Led end-to-end development of enterprise apps", "Mentored junior developers"] }
+      ]
+    },
+    {
+      "heading": "Education",
+      "items": ["B.Tech in Computer Science, XYZ University, 2016"]
+    }
+  ]
+}

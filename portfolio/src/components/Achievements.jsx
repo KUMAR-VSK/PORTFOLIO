@@ -1,28 +1,52 @@
 const Achievements = () => {
   const achievements = [
     {
-      title: 'Full-Stack Applications',
-      value: '4+',
+      title: 'GitHub Repositories',
+      value: '23+',
+      icon: '🐙',
+      description: 'Public repositories with diverse tech stack'
+    },
+    {
+      title: 'Total Commits',
+      value: '250+',
+      icon: '💻',
+      description: 'Contributions across multiple projects'
+    },
+    {
+      title: 'Full-Stack Projects',
+      value: '8+',
       icon: '🚀',
-      description: 'Successfully built and deployed production-ready applications'
+      description: 'Production-ready applications deployed'
     },
     {
-      title: 'JWT Authentication',
-      value: '✓',
-      icon: '🔐',
-      description: 'Implemented secure authentication systems across projects'
-    },
-    {
-      title: 'Hackathons',
+      title: 'Microservices',
       value: '3+',
-      icon: '🎯',
-      description: 'Active participation in competitive programming events'
+      icon: '⚙️',
+      description: 'Scalable microservice architectures built'
     },
     {
-      title: 'SQL Expertise',
+      title: 'Tech Stack',
+      value: '10+',
+      icon: '🛠️',
+      description: 'Languages and frameworks mastered'
+    },
+    {
+      title: 'SQL Certified',
       value: 'Advanced',
       icon: '🗄️',
-      description: 'Certified in advanced database querying and optimization'
+      description: 'HackerRank SQL certification'
+    },
+    {
+      title: 'LeetCode Active',
+      value: 'KUMARVSK',
+      icon: '⚡',
+      description: 'Regular problem-solving practice'
+    },
+    {
+      title: 'Live Deployments',
+      value: '5+',
+      icon: '🌐',
+      description: 'Applications hosted on Vercel'
     }
   ]
 

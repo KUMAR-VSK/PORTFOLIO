@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { useVisuals } from '../contexts/VisualsContext'
 
 const Header = () => {
   const [activeSection, setActiveSection] = useState('home')
@@ -12,8 +13,10 @@ const Header = () => {
     { id: 'projects', label: 'Projects' },
     { id: 'education', label: 'Education' },
     { id: 'certifications', label: 'Certifications' },
+    { id: 'resume', label: 'Resume' },
     { id: 'contact', label: 'Contact' }
   ]
+  const { visualsEnabled, setVisualsEnabled } = useVisuals()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -71,6 +74,14 @@ const Header = () => {
               ))}
             </ul>
 
+            {/* Visuals toggle (desktop) */}
+            <button
+              onClick={() => setVisualsEnabled(!visualsEnabled)}
+              className="hidden md:inline-flex items-center justify-center px-3 py-2 rounded-md border border-white/40 text-sm text-white bg-white/10 hover:bg-white/20"
+              aria-label="Toggle visuals"
+            >
+              {visualsEnabled ? 'Visuals: ON' : 'Visuals: OFF'}
+            </button>
             {/* Mobile menu button */}
             <div className="md:hidden">
               <button

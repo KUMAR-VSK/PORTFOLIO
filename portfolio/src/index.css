@@ -504,3 +504,7 @@ body {
 .animate-spin {
   animation: spin 1s linear infinite;
 }
+@media print {
+  canvas { display: none !important; }
+  body { background: white; color: black; }
+}
