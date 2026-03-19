@@ -96,117 +96,119 @@ const Contact = () => {
 
   return (
     <section id="contact" className="py-20 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/30 pointer-events-none"></div>
-      <div className="max-w-6xl mx-auto relative z-10">
-        <h2 className="text-4xl font-bold text-center mb-4 text-white animate-fade-in-up">
-          Get In Touch
-        </h2>
-        <p className="text-center text-gray-400 mb-16 max-w-2xl mx-auto">
-          Have a project in mind or want to discuss opportunities? I'd love to hear from you!
-        </p>
-
-        <div className="grid lg:grid-cols-2 gap-12">
-          <div className="animate-slide-in-left">
-            <h3 className="text-2xl font-semibold text-white mb-6">Let's Work Together</h3>
-            <p className="text-gray-300 mb-8 leading-relaxed">
-              I'm passionate about creating innovative solutions and would love to collaborate on exciting projects.
-              Whether you're looking for a skilled developer, want to discuss a potential opportunity, or simply want to connect,
-              I'm always open to meaningful conversations and new challenges.
-            </p>
-
-            <div className="space-y-6">
-              <div className="flex items-center space-x-4 group">
-                <div className="w-12 h-12 bg-gray-900 border border-gray-800 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 text-white">
-                  <FaEnvelope className="w-5 h-5" />
-                </div>
-                <div>
-                  <p className="text-white font-medium">Email</p>
-                  <a
-                    href="mailto:kumarvsofficial@gmail.com"
-                    className="text-gray-300 hover:text-white transition-colors"
-                    aria-label="Send email to Kumar V S"
-                  >
-                    kumarvsofficial@gmail.com
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-center space-x-4 group">
-                <div className="w-12 h-12 bg-gray-900 border border-gray-800 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 text-white">
-                  <FaPhone className="w-5 h-5" />
-                </div>
-                <div>
-                  <p className="text-white font-medium">Phone</p>
-                  <a
-                    href="tel:+919488158891"
-                    className="text-gray-300 hover:text-white transition-colors"
-                    aria-label="Call Kumar V S"
-                  >
-                    +91 9488158891
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-center space-x-4 group">
-                <div className="w-12 h-12 bg-gray-900 border border-gray-800 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 text-white">
-                  <FaMapMarkerAlt className="w-5 h-5" />
-                </div>
-                <div>
-                  <p className="text-white font-medium">Location</p>
-                  <p className="text-gray-300">Udumelpet, Tamil Nadu, India</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-8">
-              <h4 className="text-white font-semibold mb-4">Professional Profiles</h4>
-              <div className="flex space-x-4">
-                <a
-                  href="https://github.com/KUMAR-VSK"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 bg-gray-900 hover:bg-[#333] rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 border border-gray-800"
-                  aria-label="Visit Kumar V S GitHub profile"
-                >
-                  <FaGithub className="w-5 h-5 text-white" />
-                </a>
-                <a
-                  href="https://linkedin.com/in/kumar-v-s-1695861b2"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 bg-gray-900 hover:bg-[#0077b5] rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 border border-gray-800"
-                  aria-label="Visit Kumar V S LinkedIn profile"
-                >
-                  <FaLinkedin className="w-5 h-5 text-white" />
-                </a>
-                <a
-                  href="mailto:kumarvsofficial@gmail.com"
-                  className="w-12 h-12 bg-gray-900 hover:bg-red-500 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 border border-gray-800"
-                  aria-label="Send email to Kumar V S"
-                >
-                  <FaEnvelope className="w-5 h-5 text-white" />
-                </a>
-              </div>
-            </div>
-
-            <div className="mt-8 p-6 bg-gray-900 rounded-xl border border-gray-800">
-              <h4 className="text-white font-semibold mb-2 flex items-center gap-2">
-                <FaBolt className="w-5 h-5 text-yellow-400" />
-                Quick Response
-              </h4>
-              <p className="text-gray-300 text-sm">
-                I typically respond within 24 hours. For urgent inquiries, feel free to call me directly.
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div className="absolute -top-40 -left-40 w-80 h-80 bg-white/5 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute top-1/2 -right-20 w-60 h-60 bg-white/3 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute -bottom-20 left-1/3 w-72 h-72 bg-white/4 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+      </div>
+      
+      <div className="container mx-auto px-4 relative z-10 max-w-7xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 auto-rows-auto">
+          
+          {/* Header Section */}
+          <div className="lg:col-span-2 rounded-3xl bg-gradient-to-br from-white/15 via-white/10 to-white/5 backdrop-blur-2xl border-2 border-white/30 p-8 text-center relative overflow-hidden group hover:border-white/50 hover:shadow-2xl hover:shadow-white/20 transition-all duration-500 animate-fade-in-up">
+            <div className="absolute -left-10 -top-10 w-40 h-40 bg-white/10 rounded-full blur-3xl group-hover:bg-white/20 transition-all duration-700"></div>
+            <div className="absolute -right-10 -bottom-10 w-32 h-32 bg-white/5 rounded-full blur-2xl group-hover:bg-white/15 transition-all duration-700"></div>
+            <div className="relative z-10">
+              <span className="inline-flex items-center gap-2 py-2 px-5 rounded-full bg-white/20 text-white text-xs font-black tracking-widest mb-4 border-2 border-white/40 backdrop-blur-sm shadow-lg">
+                <FaBolt className="w-4 h-4" />
+                GET IN TOUCH
+              </span>
+              <h2 className="text-4xl md:text-5xl font-black text-white mb-4">
+                Let's Work <span className="gradient-text neon-text">Together</span>
+              </h2>
+              <p className="text-gray-200 text-base md:text-lg max-w-2xl mx-auto">
+                Have a project in mind or want to discuss opportunities? I'd love to hear from you!
               </p>
             </div>
           </div>
 
-          <div className="animate-slide-in-right">
-            <div className="bg-gray-900 rounded-xl p-8 border border-gray-800 hover:border-white/20 transition-all duration-300">
-              <h3 className="text-2xl font-semibold text-white mb-6">Send a Message</h3>
-              <form onSubmit={handleSubmit} className="space-y-6" noValidate>
+          {/* Contact Info Card */}
+          <div className="rounded-3xl bg-gradient-to-br from-white/15 via-white/10 to-white/5 backdrop-blur-2xl border-2 border-white/30 p-8 relative overflow-hidden group hover:border-white/50 hover:shadow-2xl hover:shadow-white/20 transition-all duration-500 animate-slide-in-left">
+            <div className="absolute -left-10 -bottom-10 w-40 h-40 bg-white/10 rounded-full blur-3xl group-hover:bg-white/20 transition-all duration-700"></div>
+            
+            <div className="relative z-10">
+              <p className="text-white text-sm font-black uppercase tracking-widest mb-6 flex items-center gap-2">
+                <span className="w-2.5 h-2.5 bg-green-400 rounded-full animate-pulse shadow-green-400/30"></span>
+                Contact Information
+              </p>
+
+              <div className="space-y-6">
+                <a href="mailto:kumarvsofficial@gmail.com" className="flex items-center gap-4 group p-4 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/20 hover:border-white/40 transition-all duration-300">
+                  <div className="w-14 h-14 rounded-xl bg-white/20 border-2 border-white/40 flex items-center justify-center group-hover:scale-110 group-hover:bg-white group-hover:border-white group-hover:shadow-2xl group-hover:shadow-white/40 transition-all duration-300">
+                    <FaEnvelope className="w-6 h-6 text-white group-hover:text-black transition-colors" />
+                  </div>
+                  <div>
+                    <p className="text-white font-bold text-sm">Email</p>
+                    <p className="text-gray-200 font-semibold">kumarvsofficial@gmail.com</p>
+                  </div>
+                </a>
+
+                <a href="tel:+919488158891" className="flex items-center gap-4 group p-4 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/20 hover:border-white/40 transition-all duration-300">
+                  <div className="w-14 h-14 rounded-xl bg-white/20 border-2 border-white/40 flex items-center justify-center group-hover:scale-110 group-hover:bg-white group-hover:border-white group-hover:shadow-2xl group-hover:shadow-white/40 transition-all duration-300">
+                    <FaPhone className="w-6 h-6 text-white group-hover:text-black transition-colors" />
+                  </div>
+                  <div>
+                    <p className="text-white font-bold text-sm">Phone</p>
+                    <p className="text-gray-200 font-semibold">+91 9488158891</p>
+                  </div>
+                </a>
+
+                <div className="flex items-center gap-4 p-4 rounded-2xl bg-white/10 border border-white/20">
+                  <div className="w-14 h-14 rounded-xl bg-white/20 border-2 border-white/40 flex items-center justify-center">
+                    <FaMapMarkerAlt className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <p className="text-white font-bold text-sm">Location</p>
+                    <p className="text-gray-200 font-semibold">Udumelpet, Tamil Nadu, India</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Social Links */}
+              <div className="mt-8">
+                <p className="text-white text-sm font-black uppercase tracking-widest mb-4">Connect With Me</p>
+                <div className="flex gap-3">
+                  <a href="https://github.com/KUMAR-VSK" target="_blank" rel="noopener noreferrer" className="w-14 h-14 rounded-2xl bg-white/20 border-2 border-white/40 flex items-center justify-center hover:scale-110 hover:rotate-6 hover:bg-[#333] hover:border-[#333] hover:shadow-2xl hover:shadow-[#333]/40 transition-all duration-300" aria-label="GitHub">
+                    <FaGithub className="w-7 h-7 text-white" />
+                  </a>
+                  <a href="https://linkedin.com/in/kumar-v-s-1695861b2" target="_blank" rel="noopener noreferrer" className="w-14 h-14 rounded-2xl bg-white/20 border-2 border-white/40 flex items-center justify-center hover:scale-110 hover:-rotate-6 hover:bg-[#0077b5] hover:border-[#0077b5] hover:shadow-2xl hover:shadow-[#0077b5]/40 transition-all duration-300" aria-label="LinkedIn">
+                    <FaLinkedin className="w-7 h-7 text-white" />
+                  </a>
+                  <a href="mailto:kumarvsofficial@gmail.com" className="w-14 h-14 rounded-2xl bg-white/20 border-2 border-white/40 flex items-center justify-center hover:scale-110 hover:-rotate-6 hover:bg-red-500 hover:border-red-500 hover:shadow-2xl hover:shadow-red-500/40 transition-all duration-300" aria-label="Email">
+                    <FaEnvelope className="w-7 h-7 text-white" />
+                  </a>
+                </div>
+              </div>
+
+              {/* Quick Response Card */}
+              <div className="mt-8 p-6 rounded-2xl bg-gradient-to-br from-white/15 to-white/10 backdrop-blur-xl border-2 border-white/30">
+                <h4 className="text-white font-bold text-sm mb-2 flex items-center gap-2">
+                  <FaBolt className="w-5 h-5 text-yellow-400" />
+                  Quick Response
+                </h4>
+                <p className="text-gray-200 text-sm">
+                  I typically respond within 24 hours. For urgent inquiries, feel free to call me directly.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Contact Form Card */}
+          <div className="rounded-3xl bg-gradient-to-br from-white/15 via-white/10 to-white/5 backdrop-blur-2xl border-2 border-white/30 p-8 relative overflow-hidden group hover:border-white/50 hover:shadow-2xl hover:shadow-white/20 transition-all duration-500 animate-slide-in-right">
+            <div className="absolute -right-10 -top-10 w-40 h-40 bg-white/10 rounded-full blur-3xl group-hover:bg-white/20 transition-all duration-700"></div>
+            <div className="absolute -left-10 -bottom-10 w-32 h-32 bg-white/5 rounded-full blur-2xl group-hover:bg-white/15 transition-all duration-700"></div>
+
+            <div className="relative z-10">
+              <p className="text-white text-sm font-black uppercase tracking-widest mb-6 flex items-center gap-2">
+                <FaPaperPlane className="w-5 h-5" />
+                Send a Message
+              </p>
+
+              <form onSubmit={handleSubmit} className="space-y-5" noValidate>
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
-                    Name <span className="text-red-500">*</span>
+                  <label htmlFor="name" className="block text-sm font-bold text-white mb-2">
+                    Name <span className="text-red-400">*</span>
                   </label>
                   <input
                     type="text"
@@ -215,9 +217,9 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     disabled={isSubmitting}
-                    className={`w-full px-4 py-3 bg-gray-800 border rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed ${errors.name
-                      ? 'border-red-500 focus:ring-red-500'
-                      : 'border-gray-700 focus:ring-white focus:border-transparent'
+                    className={`w-full px-5 py-4 bg-white/10 backdrop-blur-sm border-2 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 transition-all disabled:opacity-50 disabled:cursor-not-allowed ${errors.name
+                      ? 'border-red-500 focus:ring-red-500/50'
+                      : 'border-white/30 focus:ring-white/50 focus:border-white/60 focus:bg-white/15'
                       }`}
                     placeholder="Your Name"
                     aria-required="true"
@@ -225,15 +227,15 @@ const Contact = () => {
                     aria-describedby={errors.name ? 'name-error' : undefined}
                   />
                   {errors.name && (
-                    <p id="name-error" className="mt-1 text-sm text-red-400 flex items-center gap-1">
+                    <p id="name-error" className="mt-2 text-sm text-red-400 flex items-center gap-1">
                       <FaExclamationTriangle className="w-4 h-4" /> {errors.name}
                     </p>
                   )}
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
-                    Email <span className="text-red-500">*</span>
+                  <label htmlFor="email" className="block text-sm font-bold text-white mb-2">
+                    Email <span className="text-red-400">*</span>
                   </label>
                   <input
                     type="email"
@@ -242,9 +244,9 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     disabled={isSubmitting}
-                    className={`w-full px-4 py-3 bg-gray-800 border rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed ${errors.email
-                      ? 'border-red-500 focus:ring-red-500'
-                      : 'border-gray-700 focus:ring-white focus:border-transparent'
+                    className={`w-full px-5 py-4 bg-white/10 backdrop-blur-sm border-2 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 transition-all disabled:opacity-50 disabled:cursor-not-allowed ${errors.email
+                      ? 'border-red-500 focus:ring-red-500/50'
+                      : 'border-white/30 focus:ring-white/50 focus:border-white/60 focus:bg-white/15'
                       }`}
                     placeholder="your.email@example.com"
                     aria-required="true"
@@ -252,15 +254,15 @@ const Contact = () => {
                     aria-describedby={errors.email ? 'email-error' : undefined}
                   />
                   {errors.email && (
-                    <p id="email-error" className="mt-1 text-sm text-red-400 flex items-center gap-1">
+                    <p id="email-error" className="mt-2 text-sm text-red-400 flex items-center gap-1">
                       <FaExclamationTriangle className="w-4 h-4" /> {errors.email}
                     </p>
                   )}
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
-                    Message <span className="text-red-500">*</span>
+                  <label htmlFor="message" className="block text-sm font-bold text-white mb-2">
+                    Message <span className="text-red-400">*</span>
                   </label>
                   <textarea
                     id="message"
@@ -269,9 +271,9 @@ const Contact = () => {
                     onChange={handleChange}
                     disabled={isSubmitting}
                     rows={5}
-                    className={`w-full px-4 py-3 bg-gray-800 border rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 transition-colors resize-none disabled:opacity-50 disabled:cursor-not-allowed ${errors.message
-                      ? 'border-red-500 focus:ring-red-500'
-                      : 'border-gray-700 focus:ring-white focus:border-transparent'
+                    className={`w-full px-5 py-4 bg-white/10 backdrop-blur-sm border-2 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 transition-all resize-none disabled:opacity-50 disabled:cursor-not-allowed ${errors.message
+                      ? 'border-red-500 focus:ring-red-500/50'
+                      : 'border-white/30 focus:ring-white/50 focus:border-white/60 focus:bg-white/15'
                       }`}
                     placeholder="Tell me about your project or inquiry..."
                     maxLength={500}
@@ -280,11 +282,11 @@ const Contact = () => {
                     aria-describedby={errors.message ? 'message-error' : undefined}
                   />
                   {errors.message && (
-                    <p id="message-error" className="mt-1 text-sm text-red-400 flex items-center gap-1">
+                    <p id="message-error" className="mt-2 text-sm text-red-400 flex items-center gap-1">
                       <FaExclamationTriangle className="w-4 h-4" /> {errors.message}
                     </p>
                   )}
-                  <p className="mt-1 text-xs text-gray-400">
+                  <p className="mt-2 text-xs text-gray-400">
                     {formData.message.length} / 500 characters
                   </p>
                 </div>
@@ -292,7 +294,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-white text-black hover:bg-gray-200 font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center gap-2"
+                  className="w-full bg-gradient-to-br from-white via-gray-100 to-white backdrop-blur-xl border-2 border-white text-black hover:bg-white/90 font-black py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-white/30 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black/50 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center gap-2 neon-glow"
                   aria-label="Send message"
                 >
                   {isSubmitting ? (
@@ -313,6 +315,7 @@ const Contact = () => {
               </form>
             </div>
           </div>
+
         </div>
       </div>
     </section>
