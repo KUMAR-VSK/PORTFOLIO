@@ -3,7 +3,7 @@ import { FaGraduationCap, FaCalendarAlt, FaStar, FaSchool, FaMedal } from 'react
 const Education = () => {
   const education = [
     {
-      degree: 'B.Tech Information Technology',
+      degree: 'B.Tech Computer Technology',
       institution: 'Bannari Amman Institute of Technology',
       period: '2022 – 2026',
       grade: '8.14',
